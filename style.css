@@ -43,7 +43,11 @@ h2 {
 .view-project-btn:hover,
 .view-project-btn:focus {
   background: #eaeaea;
-  .section-image {
+  color: #181818;
+}
+
+/* THIS WAS MISPLACED: put it here */
+.section-image {
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -52,6 +56,4 @@ h2 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-  color: #181818;
 }
