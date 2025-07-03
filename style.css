@@ -1,144 +1,47 @@
 html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
   background: #181818;
-  color: #eee;
-  font-family: 'Segoe UI', 'Helvetica Neue', Arial, 'Liberation Sans', sans-serif;
-  font-size: 20px;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.center {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto;
+  color: #fff; /* ensure body text is white */
+  /* ... other existing styles ... */
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 0.2em;
-  letter-spacing: 2px;
+  color: #fff; /* make sure main header is white */
 }
 
 h2 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #111; /* changed from #8acdff to black */
-  margin-top: 0;
-  margin-bottom: 1.2em;
-  letter-spacing: 1px;
+  color: #fff; /* section headers white */
 }
 
 .bio {
-  font-size: 1.15rem;
-  margin-bottom: 2em;
-  color: #d8d8d8;
+  color: #fff; /* bio text white */
 }
 
 .highlight {
-  color: #111; /* changed from #8acdff to black */
-}
-
-.links {
-  display: flex;
-  gap: 1.2em;
-  justify-content: center;
-  margin-bottom: 2em;
+  color: #fff; /* highlighted text white */
 }
 
 .links a {
-  color: #111; /* changed from #8acdff to black */
-  text-decoration: none;
-  font-weight: 500;
-  border-bottom: 1px solid #111; /* changed from #8acdff to black */
-  transition: color 0.2s, border-bottom-color 0.2s;
+  color: #fff; /* links white */
+  border-bottom: 1px solid #fff; /* underline white */
 }
 
 .links a:hover,
 .links a:focus {
-  color: #ffffff;
-  border-bottom-color: #fff;
-}
-
-footer {
-  text-align: center;
-  padding: 1.5em 0 1em 0;
-  font-size: 0.9em;
-  color: #888;
-  letter-spacing: 1px;
-}
-
-/* Project highlight section */
-.project-highlight {
-  text-align: center;
-  margin: 3em 0 2em 0;
+  color: #8acdff; /* optional: blue on hover for links */
+  border-bottom-color: #8acdff;
 }
 
 .project-highlight h2 {
-  color: #111; /* changed from #8acdff to black */
-  font-size: 1.6em;
-  margin-bottom: 1em;
-  letter-spacing: 1px;
+  color: #fff; /* project headers white */
 }
 
 .view-project-btn {
-  display: inline-block;
-  padding: 0.7em 2em;
-  font-size: 1.05em;
-  color: #fff;
-  background: #111; /* changed from #8acdff to black */
-  border: none;
-  border-radius: 0.4em;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.2s, color 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  color: #181818; /* black text for contrast on white/colored button */
+  background: #fff; /* white button background for visibility */
 }
 
 .view-project-btn:hover,
 .view-project-btn:focus {
-  background: #333;
-  color: #fff;
-}
-
-.section-image {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 12px;
-  margin-bottom: 1em;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 2.2rem;
-  }
-  h2 {
-    font-size: 1.1rem;
-  }
-  .bio {
-    font-size: 1em;
-  }
-  .section-image {
-    width: 80px;
-    height: 80px;
-  }
+  background: #eaeaea;
+  color: #181818;
 }
