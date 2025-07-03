@@ -94,3 +94,34 @@ footer {
     font-size: 1em;
   }
 }
+.project-highlight {
+  text-align: center;
+  margin: 3em 0 2em 0;
+}
+
+.project-highlight h2 {
+  color: #8acdff;
+  font-size: 1.6em;
+  margin-bottom: 1em;
+  letter-spacing: 1px;
+}
+
+.view-project-btn {
+  display: inline-block;
+  padding: 0.7em 2em;
+  font-size: 1.05em;
+  color: #fff;
+  background: #8acdff;
+  border: none;
+  border-radius: 0.4em;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.view-project-btn:hover,
+.view-project-btn:focus {
+  background: #5fa8d3;
+  color: #fff;
+}
