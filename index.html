@@ -6,10 +6,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Zirrky's minimalist portfolio website.">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* fallback in case external CSS fails to load */
+    body {
+      background: #181818;
+      color: #fff;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    main {
+      max-width: 700px;
+      margin: 40px auto 0 auto;
+      padding: 0 1em;
+    }
+    section {
+      margin: 2.5em 0;
+      padding: 1em 0;
+      text-align: center;
+    }
+    .section-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 1em;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .links {
+      margin: 1em 0;
+    }
+    .links a {
+      color: #fff;
+      border-bottom: 1px solid #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    .links a:hover,
+    .links a:focus {
+      color: #8acdff;
+      border-bottom-color: #8acdff;
+    }
+    .view-project-btn {
+      color: #181818;
+      background: #fff;
+      padding: 0.5em 1.2em;
+      border-radius: 6px;
+      border: none;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 0.7em;
+      transition: background 0.2s, color 0.2s;
+    }
+    .view-project-btn:hover,
+    .view-project-btn:focus {
+      background: #eaeaea;
+      color: #181818;
+    }
+    footer {
+      text-align: center;
+      margin-top: 3em;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
   <main>
-    <section class="center">
+    <section>
       <h1>Rahim Sanz</h1>
       <p>
         Data Analyst skilled in MySQL, T-SQL, Tableau, Excel, and Python.<br>
