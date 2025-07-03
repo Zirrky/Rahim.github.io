@@ -43,5 +43,15 @@ h2 {
 .view-project-btn:hover,
 .view-project-btn:focus {
   background: #eaeaea;
+  .section-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
   color: #181818;
 }
