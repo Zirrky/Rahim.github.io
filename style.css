@@ -1,85 +1,60 @@
-/* assets/css/styles.css */
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    color: #333;
+html, body {
+  background: #181818;
+  color: #fff; /* ensure body text is white */
+  /* ... other existing styles ... */
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-nav {
-    background: #444;
-    padding: 10px 0;
-    text-align: center;
-}
-
-nav a {
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-nav a:hover {
-    background: #555;
-}
-
-section {
-    padding: 20px 0;
+h1 {
+  color: #fff; /* make sure main header is white */
 }
 
 h2 {
-    color: #333;
-    margin-top: 0;
+  color: #fff; /* section headers white */
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+.bio {
+  color: #fff; /* bio text white */
 }
 
-.project-card {
-    background: #f4f4f4;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 5px;
+.highlight {
+  color: #fff; /* highlighted text white */
 }
 
-.project-card h3 {
-    margin-top: 0;
+.links a {
+  color: #fff; /* links white */
+  border-bottom: 1px solid #fff; /* underline white */
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    color: #fff;
-    background: #333;
-    text-decoration: none;
-    border-radius: 5px;
+.links a:hover,
+.links a:focus {
+  color: #8acdff; /* optional: blue on hover for links */
+  border-bottom-color: #8acdff;
 }
 
-.btn:hover {
-    background: #555;
+.project-highlight h2 {
+  color: #fff; /* project headers white */
+}
+
+.view-project-btn {
+  color: #181818; /* black text for contrast on white/colored button */
+  background: #fff; /* white button background for visibility */
+}
+
+.view-project-btn:hover,
+.view-project-btn:focus {
+  background: #eaeaea;
+  color: #181818;
+}
+
+/* THIS WAS MISPLACED: put it here */
+/* Place this OUTSIDE of any other rule! */
+.section-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
