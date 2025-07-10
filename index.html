@@ -1,124 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Rahim Sanz | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zirrky's minimalist portfolio website.">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Adam Yassine | An Ai and Backend Developer based in London, Ontario.
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+
   <style>
-    body {
-      background: #181818;
-      color: #fff;
-      margin: 0;
-      font-family: Arial, sans-serif;
+    /* ***** Programming Skills Section Styles ***** */
+    .skills {
+      background-color: #0000;
+      padding: 4rem 0;
     }
-    main {
-      max-width: 700px;
-      margin: 40px auto 0 auto;
-      padding: 0 1em;
+
+    .skills__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
     }
-    .center {
-      text-align: center;
-      margin-bottom: 2.5em;
+
+    .skills__items {
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 0;
     }
-    section {
-      margin: 2.5em 0;
-      padding: 1em 0;
-      text-align: center;
+
+    .skills__item {
+      background-color: #ff6384;
+      color: white;
+      padding: 1rem 1.5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 25px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, background-color 0.3s ease;
     }
-    .section-image {
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 1em;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .links {
-      margin: 1em 0;
-    }
-    .links a {
-      color: #fff;
-      border-bottom: 1px solid #fff;
-      margin: 0 12px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    .links a:hover,
-    .links a:focus {
-      color: #8acdff;
-      border-bottom-color: #8acdff;
-    }
-    .view-project-btn {
-      color: #181818;
-      background: #fff;
-      padding: 0.5em 1.2em;
-      border-radius: 6px;
-      border: none;
-      text-decoration: none;
-      font-weight: bold;
-      display: inline-block;
-      margin-top: 0.7em;
-      transition: background 0.2s, color 0.2s;
-    }
-    .view-project-btn:hover,
-    .view-project-btn:focus {
-      background: #eaeaea;
-      color: #181818;
-    }
-    footer {
-      text-align: center;
-      margin-top: 3em;
-      color: #888;
-      font-size: 0.9em;
+
+    .skills__item:hover {
+      transform: translateY(-5px);
+      background-color: #e94e72;
     }
   </style>
 </head>
+
 <body>
-  <main>
-    <div class="center">
-      <h1>Rahim Sanz</h1>
-      <p>
-        Data Analyst skilled in MySQL, T-SQL, Tableau, Excel, and Python.<br>
-        <span class="highlight">Let’s build something great together.</span>
-      </p>
-      <nav class="links">
-        <a href="https://github.com/Zirrky" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
-        <a href="https://linkedin.com/in/rahim-sanz" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-        <a href="mailto:ozirrky@gmail.com" aria-label="Email">Email</a>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
       </nav>
     </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Adam Yassine</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>An Ai and Backend Developer based in London, Ontario. Looking to Expand my expertise in the tech realm</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
 
-    <section class="project-highlight">
-      <img src="https://raw.githubusercontent.com/Zirrky/images/main/sql.png" alt="SQL Project" class="section-image">
-      <h2>SQL DATA CLEANING AND EXPLORATORY ANALYSIS</h2>
-      <a class="view-project-btn" href="https://github.com/Zirrky/SQL-Portfolio/tree/main" target="_blank" rel="noopener">VIEW PROJECT</a>
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Work</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>AI/ML Model for Travel Planning Platform</h3>
+              <p>
+                Developed and automated AI/ML models for a travel planning platform, 
+                optimizing search and real-time data validation. Integrated APIs, 
+                fine-tuned models, and performed iterative testing to improve predictive 
+                analytics.
+              </p>
+              <ul class="work__list">
+                <li>.Net8</li>
+                <li>C#</li>
+                <li>API Integration</li>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://test.spacebeacon.com/hotels" target="_blank" class="link__text">
+                  Visit Test Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/AdamYacin30" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-1.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Cloud Application for AI Project Management Product with NLP</h3>
+              <p>
+                Developed an AI-powered project management platform, integrating 
+                generative AI to automate document creation and optimize project 
+                workflows. Worked on API integration, user management, and frontend 
+                UI development for a scalable MVP. 
+              </p>
+              <ul class="work__list">
+                <li>React.js</li>
+                <li>Python</li>
+                <li>Django/Flask</li>
+                <li>MYSQL</li>
+                <li>Cloud Applications</li>
+                <li>Generative Ai</li>
+                <li>Frontend Design</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://agilecreativelabs.ca/home/fluwd/" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Nditive3D Brand and Market Enhancement Project</h3>
+              <p>
+                Led the enhancement of Nditive3D's market presence and brand 
+                visibility in the energy sector through strategic marketing and 
+                brand development. The project involved developing and integrating 
+                SEO-driven content, implementing responsive design techniques, and 
+                optimizing web performance to ensure a seamless user experience across 
+                all devices. Leveraging HTML, CSS, and JavaScript, I refined the front-end 
+                architecture, improved UI/UX consistency, and ensured that the website met 
+                modern web standards
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>JavaScript</li>
+                <li>CSS</li>
+                <li>PHP</li>
+                <li>UX/UI Design</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://nditive3d.com/" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="#">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-3.png" class="work__image" alt="Project 3" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Responsive Business Website with React.js and Next.js</h3>
+              <p>
+                Developed and automated AI/ML models for a travel planning platform, 
+                optimizing search and real-time data validation. Integrated APIs, 
+                fine-tuned models, and performed iterative testing to improve predictive 
+                analytics.
+              </p>
+              <ul class="work__list">
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://react-business-website-three.vercel.app/" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/AdamYacin30/React-Business-Website" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-4.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-    <section class="project-highlight">
-      <img src="https://raw.githubusercontent.com/Zirrky/images/341015284b4eea39d55de081ba4ef135d2d51b56/python.jpg" alt="Python">
-      <h2>PYTHON PROJECTS AND EXPLORATORY ANALYSIS</h2>
-      <a class="view-project-btn" href="https://github.com/Zirrky/Python" target="_blank" rel="noopener">VIEW PROJECT</a>
-    </section>
+    <!-- ***** Programming Skills ***** -->
 
-    <section class="soundcloud-embed">
-      <h2>(WARNING) Uses Computer's Volume :)</h2>
-      <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
-        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2114899839&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-      </iframe>
-      <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
-        <a href="https://soundcloud.com/fredagain" title="Fred again.." target="_blank" style="color: #cccccc; text-decoration: none;">Fred again..</a>
-        &nbsp;·&nbsp;
-        <a href="https://soundcloud.com/fredagain/freelance" title="Victory Lap" target="_blank" style="color: #cccccc; text-decoration: none;">Victory Lap</a>
+    <section class="skills" id="skills">
+      <div class="row">
+        <h2>Programming Skills</h2>
+        <div class="skills__list">
+          <ul class="skills__items">
+            <li class="skills__item">Python</li>
+            <li class="skills__item">Java</li>
+            <li class="skills__item">C</li>
+            <li class="skills__item">HTML</li>
+            <li class="skills__item">JavaScript</li>
+            <li class="skills__item">CSS</li>
+            <li class="skills__item">SQL</li>
+            <li class="skills__item">Django</li>
+            <li class="skills__item">Flask</li>
+            <li class="skills__item">React.js</li>
+            <li class="skills__item">Next.js</li>
+            <li class="skills__item">Node.js</li>
+            <li class="skills__item">C#</li>
+            <li class="skills__item">.NET Core</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              As a Computer Science student at Western University, I am passionate about learning 
+              the fundamentals of Programming and implementing them to real-world applications. 
+              I am currently pursuing my bachelors of Specialization in Computer Science.
+              <br></br>
+              I have been working as an AI and Backend developer for Preeminent Technologies inc. 
+              since July of 2024, where I have gained valuable experience in the tech and travel industry. 
+              During this time, I have been involved in building and optimizing AI-driven solutions and 
+              backend infrastructures, ensuring seamless integration between services and enhancing user 
+              experiences. My role also includes managing technical operations such as integrating API's and fine 
+              tuning the AI model and coordinating with developer team to ensure the smooth deployment of projects, focusing on delivering scalable, real-time 
+              solutions for the travel platform.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="images/AdamYassine_Resume2024.pdf" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/image11.jpeg" alt="" />
+          </div>
+        </div>
       </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Rahim</p>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          I'm always looking to connect with like-minded professionals, share ideas, and collaborate 
+          on exciting projects. Whether you're working in tech, exploring AI and backend development, 
+          or simply want to network, I'd love to hear from you. I'm also open to new opportunities 
+          and collaborations, so if you're looking for someone to bring innovative solutions to your
+          team or project, feel free to reach out. Let's build something great together! The best way to 
+          get in touch with me is through email.
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:adam.gyassine@gmail.com" class="btn">adam.gyassine@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/AdamYacin30/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://codepen.io/Adam-Yassine-the-builder" title="Link to Codepen Profile">
+            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/adam-yassine-114b82297/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <p>
+      
+      </p>
+    </div>
   </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
+
 </html>
