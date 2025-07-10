@@ -46,7 +46,6 @@ h2 {
   color: #181818;
 }
 
-/* THIS WAS MISPLACED: put it here */
 /* Place this OUTSIDE of any other rule! */
 .section-image {
   width: 200px;
